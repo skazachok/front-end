@@ -3,14 +3,15 @@ nav {
     padding: 0;
     overflow: hidden;
 }
-li a {
-    display: block;
+li a { 
+    display: block; 
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 li {
     float: left;
+    clear: right;
     list-style-type: none;
 }
 .info {
@@ -18,7 +19,7 @@ li {
     padding: 50px 50px;
 }
 .contacts {
-    border-bottom: 0.3px solid lavenderblush;
+    border-bottom: 1px solid lavenderblush;
 }
 i {
     padding: 14px 16px;
@@ -26,31 +27,34 @@ i {
 i:hover, a:hover {
     color: #ff5811;
     cursor: pointer;
-    font-family: ; 
 }
 a {
     color: black;
 }
 .social-menu {
     float: right;
+    clear: left;
 }
 .nav-bar-tools {
     float: right;
+    clear: none;
     padding: 14px 0px 16px;
 }
 .logo {
     color: #ff5811;
     float: left;
+    clear: right;
     padding: 14px 16px;
     margin: 16px;
     font-weight: bold;
+    cursor: pointer;
 }
 .title {
     color: #ff5811;
 }
 .header {
     padding: 150px 200px;
-    background-image: url("../images/background.jpg");
+    background-image: url("");
 }
 h3 {
     color: gray;
@@ -58,4 +62,17 @@ h3 {
 h2 {
     display: inline;
     padding-top: 50px;
+}
+.order-now {
+    direction: none;
+    cursor: pointer;
+    background: white;
+    border: none;
+    padding: 0px;
+}
+.order-now:hover {
+    background: #ff5811;
+}
+.order-now:active {
+    background: yellow;
 }
