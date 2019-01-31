@@ -1,28 +1,41 @@
+
+.contacts, .social-menu, nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+.nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+.title, p,.product-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
 nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-li a { 
-    display: block; 
+li a, li { 
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
-}
-li {
-    float: left;
-    clear: right;
     list-style-type: none;
 }
-.info {
-    display: inline;
-    padding: 50px 50px;
+.info, .social-menu, .nav-bar-tools, i {
+    padding: 20px 20px;
 }
 .contacts {
     border-bottom: 1px solid lavenderblush;
-}
-i {
-    padding: 14px 16px;
 }
 i:hover, a:hover {
     color: #ff5811;
@@ -31,20 +44,9 @@ i:hover, a:hover {
 a {
     color: black;
 }
-.social-menu {
-    float: right;
-    clear: left;
-}
-.nav-bar-tools {
-    float: right;
-    clear: none;
-    padding: 14px 0px 16px;
-}
 .logo {
     color: #ff5811;
-    float: left;
-    clear: right;
-    padding: 14px 16px;
+    padding: 20px 20px;
     margin: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -53,14 +55,13 @@ a {
     color: #ff5811;
 }
 .header {
-    padding: 150px 200px;
+    padding: 50px 200px;
     background-image: url("");
 }
 h3 {
     color: gray;
 }
 h2 {
-    display: inline;
     padding-top: 50px;
 }
 .order-now {
@@ -75,4 +76,35 @@ h2 {
 }
 .order-now:active {
     background: yellow;
+}
+#open {
+    display: none;
+}
+
+@media screen and (max-width: 1025px) {
+    .contacts, nav {
+        display: none;
+    }
+    .header {
+        width: auto;
+        display: inline-block;
+        text-align: center;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    .order-now {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    #open {
+        display: inline;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    .title {
+        margin: 10px;
+    }
 }
